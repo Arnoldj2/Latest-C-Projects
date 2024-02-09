@@ -1,8 +1,6 @@
 # Latest-C-Projects
 Intermediate C# projects
 
-# C-Sharp-Projects
-
 ***
 
 ## Projects
