@@ -1,0 +1,126 @@
+﻿@model StarWarsApi.Models.Starship
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Starship</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.model)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.manufacturer)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.manufacturer)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cost_in_credits)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cost_in_credits)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.length)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.length)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.max_atmosphering_speed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.max_atmosphering_speed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.crew)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.crew)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.passengers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.passengers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cargo_capacity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cargo_capacity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.consumables)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.consumables)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.hyperdrive_rating)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.hyperdrive_rating)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MGLT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MGLT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.starship_class)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.starship_class)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.pilots)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.pilots)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.films)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.films)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.created)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.created)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.edited)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.edited)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.url)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

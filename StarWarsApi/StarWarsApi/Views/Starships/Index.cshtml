@@ -1,0 +1,137 @@
+﻿@model IEnumerable<StarWarsApi.Models.Starship>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-controller="" asp-action="Create">Create New Starship</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.manufacturer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cost_in_credits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.length)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.max_atmosphering_speed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.crew)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passengers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cargo_capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.consumables)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hyperdrive_rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MGLT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.starship_class)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pilots)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.films)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.edited)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.url)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cost_in_credits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.length)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.max_atmosphering_speed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.crew)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passengers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cargo_capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.consumables)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hyperdrive_rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MGLT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.starship_class)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pilots)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.films)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.edited)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.url)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

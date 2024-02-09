@@ -1,0 +1,68 @@
+﻿@model List<Starship>
+
+@{
+   
+}
+
+<div class="mb-2">
+    <a asp-controller="Starships" asp-action="Create">Create New Starship</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>model</th>
+            <th>manufacturer</th>
+            <th>cost_in_credits</th>
+            <th>length</th>
+            <th>max_atmosphering_speed</th>
+            <th>crew</th>
+            <th>passengers</th>
+            <th>cargo_capacity</th>
+            <th>consumables</th>
+            <th>hyperdrive_rating</th>
+            <th>MGLT</th>
+            <th>starship_class</th>
+@*             <th>pilots</th>
+            <th>films</th> *@
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var s in Model )
+        {
+            
+       
+            <tr>
+   
+                <td>@s.name</td>
+                <td>@s.model</td>
+                <td>@s.manufacturer</td>
+                <td>@s.cost_in_credits</td>
+                <td>@s.length</td>
+                <td>@s.max_atmosphering_speed</td>
+                <td>@s.crew</td>
+                <td>@s.passengers</td>
+                <td>@s.cargo_capacity</td>
+                <td>@s.consumables</td>
+                <td>@s.hyperdrive_rating</td>
+                <td>@s.MGLT</td>
+                <td>@s.starship_class</td>
+@*                 <td>@s.pilots</td>
+                   <td>@s.films</td> *@
+                <td>
+                    <a asp-controller="Starships" asp-action="Edit" asp-route-id="@s.Id" asp-route-slug="@s.slug"> Edit </a>
+                <a asp-controller="Starships" asp-action="Delete" asp-route-id="@s.Id" asp-route-slug="@s.slug" > Delete </a>
+
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+    
+
