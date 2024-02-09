@@ -1,10 +1,7 @@
 # Latest-C-Projects
 Intermediate C# projects
 
-
 # C-Sharp-Projects
-
-These are basic projects written in C-Sharp. They use various modules such sqlite3 and ASP.Net MVC
 
 ***
 
@@ -12,7 +9,6 @@ These are basic projects written in C-Sharp. They use various modules such sqlit
 
 <ol>
 <li>Star Wars Back End API<li>
-
 </ol>
 
 ## Star Wars Back End API
